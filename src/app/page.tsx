@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Home = () => {
-  const ImageGithub = "/public/images/github.png"
+  const ImageGithub = "/images/github.png"
   return (
     <>
       <head>

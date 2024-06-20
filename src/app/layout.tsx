@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const imagePath = "/favicon.ico";
+  const imagePath = "/favicon.png";
   return (
     <html lang="pt-br">
       <body className={inter.className}>
