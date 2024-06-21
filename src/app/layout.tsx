@@ -16,11 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const imagePath = "/favicon.png";
+  const imagePath = "/images/favicon.png";
   return (
     <html lang="pt-br">
       <body className={inter.className}>
-        <nav>
+        <nav className="bg-slate-500 flex flex-row justify-around items-center">
           <Image
             src={imagePath}
             alt="Logo da Kdev"
@@ -28,7 +28,7 @@ export default function RootLayout({
             height={50}
           ></Image>
           <Link href="/">Home </Link>
-          <Link href="/contato">Entre Contato </Link>
+          <Link href="/sobre">Sobre </Link>
         </nav>
         {children}
       </body>
