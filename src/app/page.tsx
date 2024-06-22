@@ -13,7 +13,7 @@ const HomePage = () => {
       <head>
         <title>Home | Kdev</title>
       </head>
-      <body>
+      <body className="flex flex-col justify-center text-center w-1200 bg-gradient-to-b from bg-tertiary to-bg-secundary">
         <p className="bg-gray-700 w-full h-36">CARROSSEL DE IMAGEM</p>
         <p className="text-center">{slogan}</p>
         <div className="w-4/5 flex justify-center">
@@ -22,7 +22,7 @@ const HomePage = () => {
           <div className="w-52 h-96 p-1 m-4 bg-orange-600">3</div>
         </div>
         <div className="flex flex-row justify-around">
-          <div className="w-28 h-36 p-1 m-2 bg-lime-500"></div>
+          <div className="w-28 h-36 p-1 m-2 bg-lime-500 border-4 border-b-8 border-white"></div>
           <div className="w-28 h-36 p-1 m-2 bg-lime-500"></div>
           <div className="w-28 h-36 p-1 m-2 bg-lime-500"></div>
           <div className="w-28 h-36 p-1 m-2 bg-lime-500"></div>
