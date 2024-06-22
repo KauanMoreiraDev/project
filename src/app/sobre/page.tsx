@@ -23,7 +23,7 @@ const Contato = () => {
         Fuga ipsum iure aut ipsam perspiciatis, debitis ex, reprehenderit nulla eaque autem magnam, quasi repudiandae blanditiis ullam adipisci sunt aperiam asperiores omnis. Ipsam nisi voluptates, adipisci iure magni odio aliquid.</p>
         <Link href={"https://instagram.com/kauannmoreira_"} target="_blank"><Image src={InstagramImage} alt="instagram" width={50} height={50}></Image> </Link>
         <Link href={"https://github.com/KauanMoreiraDev"} target="_blank"><Image src={GithubImage} alt="Github" width={50} height={50}></Image> </Link>
-        <Link href={"https://github.com/KauanMoreiraDev"} target="_blank"><Image src={LinkedinImage} alt="Linkedin" width={50} height={50}></Image> </Link>
+        <Link href={"https://www.linkedin.com/in/kauan-moreira-a5449426a/"} target="_blank"><Image src={LinkedinImage} alt="Linkedin" width={50} height={50}></Image> </Link>
         <Link href={"https://github.com/KauanMoreiraDev"} target="_blank"><Image src={EmailImage} alt="Email" width={50} height={50}></Image> </Link>
         <Link href="/">Voltar para a página inicial</Link>
       </main>
