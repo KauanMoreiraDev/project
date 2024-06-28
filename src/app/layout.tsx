@@ -16,10 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const imagePath = "/images/favicon.png";
-  const TelefoneImage = "/images/chamada-telefonica.png"
-  const WhatsappImage = "/images/whatsapp_logo.png"
-  const InstagramImage = "/images/instagram.png"
-  const EmailImage = "/images/envelope.png"
+  const TelefoneImage = "/images/chamada-telefonica.png";
+  const WhatsappImage = "/images/whatsapp_logo.png";
+  const InstagramImage = "/images/instagram.png";
+  const EmailImage = "/images/envelope.png";
 
   const Contato = "Entre em Contato Conosco"
   const SloganFooter = "A Diversão para Festa, Está Aqui!"

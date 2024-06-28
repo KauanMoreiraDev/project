@@ -15,13 +15,17 @@ const config: Config = {
         quaternary: "#FFDA99",
       },
       width: {
+        '200': '200px',
         '1200': '1200px',
+      },
+      borderWidth: {
+        '16': '16px',
+        '80': '80px',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-          LinearAgballoons: "linear-gradient(to bottom, var(--tw-color-tertiary, var(--tw-color-secundary)"
       },
     },
   },
