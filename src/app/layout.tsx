@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
+// import Header from "/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const imagePath = "/images/favicon.png";
+  const imagePath = "/images/logo.png";
   const TelefoneImage = "/images/chamada-telefonica.png";
   const WhatsappImage = "/images/whatsapp_logo.png";
   const InstagramImage = "/images/instagram.png";
@@ -32,14 +33,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <h1>Ag Balloons - por Aline Godoy</h1>
-        <nav className="bg-slate-500 flex flex-row justify-around items-center">
-          <Link href="/">Convite</Link>
-          <Link href="/">Decoração </Link>
-          <Image src={imagePath} alt="Logo da Kdev" width={50} height={50} ></Image>
-          <Link href="/">Recriação</Link>
-          <Link href="/">Contato </Link>
-        </nav>
+        {/* {Header/}    */}
         {children}
         <footer className="bg-slate-100 w-full h-1/4 flex flex-col justify-center text-center">
           <h1>{Contato}</h1>
