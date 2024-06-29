@@ -44,8 +44,8 @@ export default function RootLayout({
             <Link href={Email} target="_blank"><Image className="p-1 m-1" src={EmailImage} alt="Email" width={40} height={40}></Image> </Link>
           </span>
           <p>{SloganFooter}</p>
-          <div>
-            <Link className="flex justify-center" href={Kdev}>Desenvolvido por Kdev</Link>
+          <div className="flex justify-center items-center m-2 p-2">
+            <Link className="w-56 h-8 text-secundary rounded-full hover:bg-secundary hover:text-white hover:underline transition duration-500" href={Kdev} target="_blank">Desenvolvido por Kdev</Link>
           </div>
         </footer>
       </body>

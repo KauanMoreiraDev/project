@@ -26,21 +26,33 @@ const HomePage = () => {
           <p className="text-center">{slogan}</p>
           <div className="flex justify-center">
             <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16">
-              <div className="w-52 h-96 p-1 m-4 bg-orange-600 relative group">1</div>
-              {/* <Image src={convF1} alt="convite" width={52} height={96}></Image> */}
-                <div id="teste" className="hidden bg-blue-700 group-hover:block ">1.1</div>
-                {/* <Image src={convA1} alt="convite" width={52} height={200}></Image> */}
-              <div className="w-52 h-96 p-1 m-4 bg-orange-600">2</div>
-              <div className="w-52 h-96 p-1 m-4 bg-orange-600">3</div>
+              <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
+                <div id="container" className="relative w-full h-full">
+                <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
+                <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
+                </div>
+              </div>
+              <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
+                <div id="container" className="relative w-full h-full">
+                <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
+                <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
+                </div>
+              </div>
+              <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
+                <div id="container" className="relative w-full h-full">
+                <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
+                <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex flex-row justify-around m-4 p-4">
             <ul className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-              <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-6"><Image src={decor1} width={280} height={257} alt="foto"></Image></li>
-              <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-2"><Image src={decor2} width={262} height={257} alt="foto"></Image></li>
+              <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-6"><Image src={decor1} layout="fill" alt="foto"></Image></li>
+              <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-2"><Image src={decor2} layout="fill" alt="foto"></Image></li>
               <li className="p-1 m-2 border-16 border-b-80 border-white rotate-12"><Image src={decor3} width={262} height={257} alt="foto"></Image></li>
-              <li className="p-1 m-2 border-16 border-b-80 border-white rotate-12"><Image src={decor4} width={262} height={257} alt="foto"></Image></li>
-              <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-2"><Image src={decor5} width={262} height={257} alt="foto"></Image></li>
+              <li className="p-1 m-2 border-16 border-b-80 border-white rotate-12"><Image src={decor4} layout="fill" alt="foto"></Image></li>
+              <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-2"><Image src={decor5} layout="fill" alt="foto"></Image></li>
               <li className="p-1 m-2 border-16 border-b-80 border-white "><Image src={decor6} width={262} height={257} alt="foto"></Image></li>
             </ul>
           </div>
