@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import Carousel_recriação from "./components/carousel_recriação/page";
+
 
 const HomePage = () => {
 
@@ -22,26 +26,26 @@ const HomePage = () => {
       </head>
       <body className="flex flex-col justify-center text-center w-1320 bg-gradient-to-b from-tertiary to-secundary">
         <main className="m-4 mt-0 p-16 pt-0">
-          <p className="bg-gray-700 w-full h-72">CARROSSEL DE IMAGEM</p>
+          <Carousel_recriação />
           <p className="text-center">{slogan}</p>
           <div className="flex justify-center">
             <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16">
               <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
                 <div id="container" className="relative w-full h-full">
-                <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
-                <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
+                  <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
+                  <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
                 </div>
               </div>
               <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
                 <div id="container" className="relative w-full h-full">
-                <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
-                <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
+                  <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
+                  <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
                 </div>
               </div>
               <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
                 <div id="container" className="relative w-full h-full">
-                <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
-                <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
+                  <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
+                  <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
                 </div>
               </div>
             </div>
@@ -56,11 +60,17 @@ const HomePage = () => {
               <li className="p-1 m-2 border-16 border-b-80 border-white "><Image src={decor6} width={262} height={257} alt="foto"></Image></li>
             </ul>
           </div>
-          <p className="bg-gray-700 w-full h-72">CARROSSEL DE IMAGEM</p>
-          <p>Lembranças <br></br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quasi fuga incidunt provident itaque minima, sint excepturi ut quas odio placeat veritatis deserunt totam magnam, quisquam at. Eligendi, cupiditate aspernatur.
-            Delectus molestias esse quasi nihil officiis commodi voluptates, alias illo illum sapiente sequi quisquam voluptate, non, dolores recusandae suscipit debitis praesentium vel repellat minima? Labore pariatur nesciunt placeat veniam earum.
-            Placeat repudiandae tenetur modi, non reiciendis nostrum illum, eligendi cum dicta totam sequi, tempora explicabo magni quisquam ipsam! Doloremque sequi nesciunt accusamus in ex architecto, placeat facere laborum mollitia a?
-            Aspernatur sint similique nisi possimus expedita dolorem recusandae accusantium, dolore, consectetur consequatur unde excepturi officiis ratione dolor. Fuga ipsa velit voluptas perferendis, repellat deleniti, saepe fugit culpa, quaerat quisquam molestiae.</p>
+          <Carousel_recriação />
+          <div className="flex justify-center m-1 p-2">
+            <div className="grid grid-cols-3 gap-10">
+              <div className="m-1 p-1 w-52 h-60 bg-lime-500 rounded-md">metade foto, metade descrição</div>
+              <div className="m-1 p-1 w-52 h-60 bg-lime-500 rounded-md">metade foto, metade descrição</div>
+              <div className="m-1 p-1 w-52 h-60 bg-lime-500 rounded-md">metade foto, metade descrição</div>
+              <div className="m-1 p-1 w-52 h-60 bg-lime-500 rounded-md">metade foto, metade descrição</div>
+              <div className="m-1 p-1 w-52 h-60 bg-lime-500 rounded-md">metade foto, metade descrição</div>
+              <div className="m-1 p-1 w-52 h-60 bg-lime-500 rounded-md">metade foto, metade descrição</div>
+            </div>
+          </div>
         </main>
       </body>
     </>

@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-// import Header from "/components/Header";
+import Header from "./components/header/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        {/* {Header/}    */}
+        <Header/>  
         {children}
         <footer className="bg-slate-100 w-full h-1/4 flex flex-col justify-center text-center">
           <h1>{Contato}</h1>
