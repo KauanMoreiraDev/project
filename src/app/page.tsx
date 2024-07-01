@@ -7,14 +7,17 @@ import Carousel_recriação from "./components/carousel_recriação/page";
 
 const HomePage = () => {
 
-  const slogan1 = "Sabe aquela magia que só uma festa bem feita pode proporcionar?"
-  const slogan2 = "Nós transformamos momentos especiais em memórias inesquecíveis com nossa recriação e decoração de festas dos sonhos!"
-  const slogan3 = "A Ag Balloons nasceu da paixão por criar ambientes mágicos que transportam você para um mundo de fantasia, repleto de cores, alegria e sofisticação."
-  const slogan4 = "Desde aniversários infantis até celebrações adultas, oferecemos decorações temáticas e personalizadas que vão além das expectativas."
-  const slogan5 = "Quer uma festa de princesa, um safári emocionante ou uma elegante noite de gala? Nós realizamos!"
-  const slogan6 = "Além das decorações encantadoras, temos uma equipe dedicada e criativa que garante que cada detalhe seja perfeito, fazendo com que a sua festa seja única e especial."
-  const slogan7 = "Venha vivenciar a experiência única de uma festa criada por nós!"
-  const slogan8 = "Transformamos qualquer evento em uma celebração mágica que vai encantar a todos, de crianças a adultos!"
+  const slogan = [{
+    frase: "Sabe aquela magia que só uma festa bem feita pode proporcionar?",
+  },
+  {
+    marca: "AgBallons",
+  },
+  {
+    frase: "Desde aniversários infantis até celebrações adultas, oferecemos decorações temáticas e personalizadas que vão além das expectativas.",
+  },
+  ]
+
 
   const convF1 = "/images/input/Convites/convite fechado.jpg"
   const convA1 = "/images/input/Convites/convite aberto.jpg"
@@ -31,18 +34,16 @@ const HomePage = () => {
       <head>
         <title>Home | Kdev</title>
       </head>
-      <body className="flex flex-col justify-center text-center w-1320 bg-gradient-to-b from-tertiary to-secundary">
+      <body className="flex flex-col justify-center text-center max-w-screen-2xl bg-gradient-to-b from-tertiary to-secundary relative">
+        <Image src="/images/backgroundConfete.webp" alt="image" width={2000} height={1000} className="bg-blend-darken absolute object-cover inset-0 bg-repeat bg-contain" />
         <main className="m-4 mt-0 p-16 pt-0">
           <Carousel_recriação />
-          <div className="text-center m-2 p-1">
-            <div>{slogan1}</div>
-            <div>{slogan2}</div>
-            <div>{slogan3}</div>
-            <div>{slogan4}</div>
-            <div>{slogan5}</div>
-            <div>{slogan6}</div>
-            <div>{slogan7}</div>
-            <div>{slogan8}</div>
+          <div className="text-center m-2 mt-8 p-1">
+            {slogan.map(auladogu => (
+              <><div>{auladogu.frase}</div><div>
+                <div className="text-blue-600">{auladogu.marca}</div>
+              </div></>
+            ))}
           </div>
           <div className="flex justify-center">
             <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16">
@@ -88,7 +89,7 @@ const HomePage = () => {
             </div>
           </div>
         </main>
-      </body>
+      </body >
     </>
   );
 }

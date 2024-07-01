@@ -32,7 +32,7 @@ export default function RootLayout({
 
   return (
     <html lang="pt-br">
-      <body>
+      <body className="bg-[url('/images/memphis-round-confetti-festive-background-in-cyan-blue-pink-and-yellow-childish-pattern-and-bokeh-confetti-circles-decoration-holiday-background-free-png.webp')]">
         <Header/>  
         {children}
         <footer className="bg-slate-100 w-full h-1/4 flex flex-col justify-center text-center">
