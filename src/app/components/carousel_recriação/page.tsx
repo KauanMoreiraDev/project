@@ -3,9 +3,11 @@
 import { useState } from 'react';
 
 const images = [
-    '/images/input/recriação.png',
-    '/images/input/recriação(1).png',
-    '/images/input/recriação(2).png',
+    '/images/input/SliderRecriação/IMG_20240630_185240_232.jpg',
+    '/images/input/SliderRecriação/IMG_20240630_185244_592.jpg',
+    '/images/input/SliderRecriação/IMG_20240630_185247_811.jpg',
+    '/images/input/SliderRecriação/IMG_20240630_185250_337.jpg',
+    '/images/input/SliderRecriação/IMG_20240630_185256_000.jpg',
 ];
 
 const Carousel_recriação = () => {
