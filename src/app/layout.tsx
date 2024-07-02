@@ -35,7 +35,7 @@ export default function RootLayout({
       <body>
         <Header/>  
         {children}
-        <footer className="bg-slate-100 w-full h-1/4 flex flex-col justify-center text-center">
+        <footer className="bg-slate-100 w-full h-1/4 flex flex-col justify-center text-center fixed">
           <h1>{Contato}</h1>
           <span className="flex flex-row justify-center">
             <Link href={Telefone} target="_blank"><Image className="p-1 m-1" src={TelefoneImage} alt="Telefone" width={40} height={40}></Image> </Link>
