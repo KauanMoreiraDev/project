@@ -21,13 +21,10 @@ const HomePage = () => {
   const decor5 = "/images/input/Decoração/idade.png"
   const decor6 = "/images/input/Decoração/verão.png"
 
-  // <Image src="/images/backgroundConfete.webp" alt="image" width={2000} height={1000} className="bg-blend-darken absolute object-cover inset-0 bg-repeat bg-contain -z-10" />
-  // <main className="m-4 mt-0 p-16 pt-0">
-
   return (
     <>
       <head>
-        <title>Home | Kdev</title>
+        <title>Sua Festa Está Aqui | AgBalloons</title>
       </head>
       <body className="flex flex-col justify-center text-center max-w-screen-2xl bg-gradient-to-b from-tertiary to-secundary relative">
         <main className="bg-[url('/images/backgroundConfete.webp')] bg-repeat">
