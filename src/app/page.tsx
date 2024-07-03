@@ -30,14 +30,8 @@ const HomePage = () => {
         <title>Home | Kdev</title>
       </head>
       <body className="flex flex-col justify-center text-center max-w-screen-2xl bg-gradient-to-b from-tertiary to-secundary relative">
-        <main className="m-4 mt-0 p-16 pt-0">
-          <div className="relative w-full">
-            <div className="absolute  w-full h-full -z-10 -top-32 -m-16">
-              <Image src="/images/backgroundConfete.webp" alt="papel de parede" width={1000} height={1000} className="bg-repeat-y bg-cover"/>
-            </div>
-
-
-
+        <main className="bg-[url('/images/backgroundConfete.webp')] bg-repeat">
+          <div className="m-4 mt-0 p-16 pt-0">
             <Carousel_recriação />
             <div className="text-center m-2 mt-8 p-1">
               {slogan.map(auladogu => (
