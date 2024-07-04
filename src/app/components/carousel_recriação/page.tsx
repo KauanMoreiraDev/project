@@ -38,4 +38,5 @@ const Carousel_recriação = () => {
     );
 };
 
+
 export default Carousel_recriação;
