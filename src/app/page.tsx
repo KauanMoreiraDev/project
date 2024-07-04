@@ -68,10 +68,8 @@ const HomePage = () => {
           <div className="m-4 mt-0 p-16 pt-0">
             <Carousel_recriação />
             <div className="text-center m-2 mt-8 p-1">
-              {slogan.map(auladogu => (
-                <><div>{auladogu.frase}</div><div>
-                  <div className="text-blue-600">{auladogu.marca}</div>
-                </div></>
+              {slogan.map((slgfn, index) => (
+                <div key={index}>{slgfn.frase}</div>
               ))}
             </div>
             <div className="flex flex-row justify-center">
