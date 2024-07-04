@@ -12,48 +12,48 @@ const HomePage = () => {
 
 
   const convites = [{
-    nome: "nome alt convite",
+    nome: "convite",
     fechado: "/images/input/Convites/convite fechado.jpg",
     aberto: "/images/input/Convites/convite aberto.jpg",
   },
   {
-    nome: "nome alt convite",
+    nome: "convite",
     fechado: "/images/input/Convites/convite fechado.jpg",
     aberto: "/images/input/Convites/convite aberto.jpg",
   },
   {
-    nome: "nome alt convite",
+    nome: "convite",
     fechado: "/images/input/Convites/convite fechado.jpg",
     aberto: "/images/input/Convites/convite aberto.jpg",
   }]
 
   const decor = [{
-    nome: "nome alt convite",
+    nome: "convite",
     imagem: "/images/input/Decoração/avião.png",
     rotação: "",
   },
   {
-    nome: "nome alt convite",
+    nome: "convite",
     imagem: "/images/input/Decoração/pokemon.png",
     rotação: "",
   },
   {
-    nome: "nome alt convite",
+    nome: "convite",
     imagem: "/images/input/Decoração/stitch.png",
     rotação: "",
   },
   {
-    nome: "nome alt convite",
+    nome: "convite",
     imagem: "/images/input/Decoração/decor baby.png",
     rotação: "",
   },
   {
-    nome: "nome alt convite",
+    nome: "convite",
     imagem: "/images/input/Decoração/idade.png",
     rotação: "",
   },
   {
-    nome: "nome alt convite",
+    nome: "convite",
     imagem: "/images/input/Decoração/verão.png",
     rotação: "",
   }]
