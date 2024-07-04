@@ -88,7 +88,8 @@ const HomePage = () => {
               <ul className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {decor.map((dccfn, index) => (
                   <li key={`decor-${index}`} className="m-2 border-16 border-b-80 border-white -rotate-6">
-                    <div className="relative w-52 h-52"><Image key={`imagem-${index}`}src={dccfn.imagem} layout="fill" alt={dccfn.nome}></Image></div>
+                    <div className="relative w-52 h-52">
+                      <Image key={`imagem-${index}`}src={dccfn.imagem} layout="fill" alt={dccfn.nome}></Image></div>
                   </li>
                 ))}
               </ul>
