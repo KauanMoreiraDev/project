@@ -11,18 +11,46 @@ const HomePage = () => {
     { frase: "Desde aniversários infantis até celebrações adultas, oferecemos decorações temáticas e personalizadas que vão além das expectativas." }]
 
 
-  const convF1 = "/images/input/Convites/convite fechado.jpg"
-  const convA1 = "/images/input/Convites/convite aberto.jpg"
+  const convites = [{
+    nome: "nome alt convite",
+    fechado: "/images/input/Convites/convite fechado.jpg",
+    aberto: "/images/input/Convites/convite aberto.jpg",
+  },
+  {
+    nome: "nome alt convite",
+    fechado: "/images/input/Convites/convite fechado.jpg",
+    aberto: "/images/input/Convites/convite aberto.jpg",
+  },
+  {
+    nome: "nome alt convite",
+    fechado: "/images/input/Convites/convite fechado.jpg",
+    aberto: "/images/input/Convites/convite aberto.jpg",
+  }]
 
-  const decor1 = "/images/input/Decoração/avião.png"
-  const decor2 = "/images/input/Decoração/pokemon.png"
-  const decor3 = "/images/input/Decoração/stitch.png"
-  const decor4 = "/images/input/Decoração/decor baby.png"
-  const decor5 = "/images/input/Decoração/idade.png"
-  const decor6 = "/images/input/Decoração/verão.png"
-
-  // <Image src="/images/backgroundConfete.webp" alt="image" width={2000} height={1000} className="bg-blend-darken absolute object-cover inset-0 bg-repeat bg-contain -z-10" />
-  // <main className="m-4 mt-0 p-16 pt-0">
+  const decor = [{
+    nome: "nome alt convite",
+    imagem: "/images/input/Decoração/avião.png",
+  },
+  {
+    nome: "nome alt convite",
+    imagem: "/images/input/Decoração/pokemon.png",
+  },
+  {
+    nome: "nome alt convite",
+    imagem: "/images/input/Decoração/stitch.png",
+  },
+  {
+    nome: "nome alt convite",
+    imagem: "/images/input/Decoração/decor baby.png",
+  },
+  {
+    nome: "nome alt convite",
+    imagem: "/images/input/Decoração/idade.png",
+  },
+  {
+    nome: "nome alt convite",
+    imagem: "/images/input/Decoração/verão.png",
+  }]
 
   return (
     <>
@@ -40,36 +68,23 @@ const HomePage = () => {
                 </div></>
               ))}
             </div>
-            <div className="flex justify-center">
+            <div className="flex flex-row justify-center">
               <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16">
                 <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
-                  <div id="container" className="relative w-full h-full">
-                    <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
-                    <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
-                  </div>
-                </div>
-                <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
-                  <div id="container" className="relative w-full h-full">
-                    <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
-                    <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
-                  </div>
-                </div>
-                <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
-                  <div id="container" className="relative w-full h-full">
-                    <Image src={convF1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
-                    <Image src={convA1} alt="convite" layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
-                  </div>
+                  {convites.map((cvtfn, index) => (
+                    <div key={index} className="relative w-full h-full">
+                      <Image src={cvtfn.fechado} alt={cvtfn.nome} layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
+                      <Image src={cvtfn.aberto} alt={cvtfn.nome} layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
             <div className="flex flex-row justify-around m-4 p-4">
               <ul className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-6"><Image src={decor1} layout="fill" alt="foto"></Image></li>
-                <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-2"><Image src={decor2} layout="fill" alt="foto"></Image></li>
-                <li className="p-1 m-2 border-16 border-b-80 border-white rotate-12"><Image src={decor3} width={262} height={257} alt="foto"></Image></li>
-                <li className="p-1 m-2 border-16 border-b-80 border-white rotate-12"><Image src={decor4} layout="fill" alt="foto"></Image></li>
-                <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-2"><Image src={decor5} layout="fill" alt="foto"></Image></li>
-                <li className="p-1 m-2 border-16 border-b-80 border-white "><Image src={decor6} width={262} height={257} alt="foto"></Image></li>
+                {decor.map((dccfn, index) => (
+                  <li className="p-1 m-2 border-16 border-b-80 border-white -rotate-6"><Image key={index} src={dccfn.imagem} layout="fill" alt={dccfn.nome}></Image></li>
+                ))}
               </ul>
             </div>
             <Carousel_recriação />
