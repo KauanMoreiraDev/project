@@ -75,21 +75,21 @@ const HomePage = () => {
             <div className="flex flex-row justify-center">
               <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16">
                 {convites.map((cvtfn, index) => (
-                  <div className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
-                    <div key={index} className="relative w-full h-full">
-                      <Image key={index} src={cvtfn.fechado} alt={cvtfn.nome} layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
-                      <Image key={index} src={cvtfn.aberto} alt={cvtfn.nome} layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
+                  <div key={index} className="w-52 h-96 p-1 m-4 bg-orange-600 hover:bg-pink-600 group">
+                    <div className="relative w-full h-full">
+                      <Image  src={cvtfn.fechado} alt={cvtfn.nome} layout="fill" objectFit="cover" className="transition-opacity duration-500 group-hover:opacity-0"></Image>
+                      <Image  src={cvtfn.aberto} alt={cvtfn.nome} layout="fill" objectFit="cover" className="transition-opacity duration-500 opacity-0 group-hover:opacity-100"></Image>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="flex flex-row justify-around m-4 p-4">
+            <div className= "flex flex-row justify-around m-4 p-4">
               <ul className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {decor.map((dccfn, index) => (
                   <li key={index} className="m-2 border-16 border-b-80 border-white -rotate-6">
                     <div className="relative w-52 h-52">
-                      <Image key={index}src={dccfn.imagem} layout="fill" alt={dccfn.nome}></Image></div>
+                      <Image src={dccfn.imagem} layout="fill" alt={dccfn.nome}></Image></div>
                   </li>
                 ))}
               </ul>
